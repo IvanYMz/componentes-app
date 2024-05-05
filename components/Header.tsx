@@ -19,7 +19,7 @@ export default function Header({ goBack, headerTitle, safe, white }: HeaderProps
             marginTop: safe ? top : 0,
         }}>
             {goBack && (
-                <TouchableOpacity style={styles.backTouchable} onPress={() => { router.back(); }}>
+                <TouchableOpacity style={styles.iconTouchable} onPress={() => { router.back(); }}>
                     <Ionicon name={'arrow-back-outline'} size={25} />
                 </TouchableOpacity>
             )}
@@ -31,7 +31,13 @@ export default function Header({ goBack, headerTitle, safe, white }: HeaderProps
             >
                 {headerTitle}
             </Text>
-            <View></View>
+            {goBack && (
+
+                <TouchableOpacity style={styles.iconTouchable}>
+                    <Ionicon name={'information-circle-outline'} size={25} />
+                </TouchableOpacity>
+            )
+            }
         </View>
     )
 };
@@ -43,7 +49,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
-    backTouchable: {
+    iconTouchable: {
         padding: 4,
     },
 });
