@@ -1,14 +1,14 @@
 export const animationMenuItems = [
     {
-        name: 'Animation 101',
+        name: 'Animations',
         icon: 'cube-outline',
-        component: 'Animation101Screen',
+        component: 'AnimationsScreen',
         type: 'animationMenuItems',
     },
     {
-        name: 'Animation 102',
+        name: 'Animation Draggable',
         icon: 'albums-outline',
-        component: 'Animation102Screen',
+        component: 'AnimationDraggableScreen',
         type: 'animationMenuItems',
     },
 ];

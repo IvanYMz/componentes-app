@@ -1,6 +1,6 @@
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
-import AnimatedSquare from './AnimatedSquare';
-import animationsData from '../hooks/animationsData';
+import Square from './Square';
+import animationsData from '../constants/animationsData';
 import { colors } from '../config/theme/theme';
 
 export default function AnimationsList() {
@@ -13,8 +13,8 @@ export default function AnimationsList() {
             renderItem={({ item }) => {
                 return (
                     <View style={styles.itemStyle}>
-                        <AnimatedSquare opacityValue={item.ref} />
-                        <TouchableOpacity style={styles.animationButton} onPress={() => { item.function({ fadeAnimationValue: item.ref }) }} >
+                        <Square properties={item.properties} />
+                        <TouchableOpacity style={styles.animationButton} onPress={() => { item.function({ animationValue: item.ref }) }} >
                             <Text>{item.name}</Text>
                         </TouchableOpacity>
                     </View>
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         width: '33.33%',
-        marginVertical: 10,
+        marginVertical: 20,
         gap: 20,
     },
     animationButton: {

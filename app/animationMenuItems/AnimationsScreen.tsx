@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import Header from '../../components/Header';
 import AnimationsList from '../../components/AnimationsList';
 
-export default function Animation101Screen() {
+export default function AnimationsScreen() {
 
     return (
         <View style={styles.container}>
