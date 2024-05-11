@@ -18,7 +18,7 @@ export default function animationsData() {
             { name: 'fadeIn', ref: fadeInAnimationValue, properties: { opacityValue: fadeInAnimationValue }, function: fadeIn },
             { name: 'fadeOut', ref: fadeOutAnimationValue, properties: { opacityValue: fadeOutAnimationValue }, function: fadeOut },
             { name: 'slideInTop', ref: slideInTopAnimationValue, properties: { translateYValue: slideInTopAnimationValue }, function: slideInTop },
-            { name: 'slideInTop', ref: slideInBottomAnimationValue, properties: { translateYValue: slideInBottomAnimationValue }, function: slideInBottom },
+            { name: 'slideInBottom', ref: slideInBottomAnimationValue, properties: { translateYValue: slideInBottomAnimationValue }, function: slideInBottom },
             { name: 'rotate90', ref: rotate90AnimationValue, properties: { rotateValue: rotate90AnimationValue, rotationDegrees: 90 }, function: rotate },
             { name: 'rotate180', ref: rotate180AnimationValue, properties: { rotateValue: rotate180AnimationValue, rotationDegrees: 180 }, function: rotate },
             { name: 'rotate360', ref: rotate360AnimationValue, properties: { rotateValue: rotate360AnimationValue, rotationDegrees: 360 }, function: rotate },

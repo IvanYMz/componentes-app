@@ -36,10 +36,9 @@ export const globalStyles = StyleSheet.create({
         flex: 1,
     },
     btnPrimary: {
-        backgroundColor: colors.primary,
-        borderRadius: 10,
-        padding: 10,
-        alignItems: "center",
+        padding: 8,
+        borderRadius: 4,
+        backgroundColor: colors.background,
     },
     btnPrimaryText: {
         color: colors.text,
